@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image:url("img.jpg");
+
+        background-size: cover;
+        font-family: sans-serif;
+}
+
+
+
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  text-align: left;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  border-bottom: 1px solid #888;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+  font-size: .8em;
+}
+
+*******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+********************************************
+
+@media screen and (min-width: 650px) {
+  .nav li {
+    width:150px;
+    border-bottom: none;
+    height:60px;
+    line-height:60px;
+    font-size:1.4em;
+    display:-webkit-inline-flex;
+    margin-right: -4px;
+  }
+
+  .nav a {
+    border-bottom: none;
+  }
+
+  .nav > ul > li {
+    text-align: center;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 0;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+  }
+
+  .nav li:hover ul {
+    display: block;
+  }
+
+  .nav li ul li {
+    display: block;
+  }
+}
+
+#Header
+{
+        background-color:black;
+        color:white;
+        text-align:center;
+        padding:5px;
+}
+
+#header {
+  height:100px;
+  background-color:grey;
+}
+
+background {
+  background: url(clgs.png);
+  border: 2px solid black;
+}
+
+#transbox {
+  margin: 160px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); 
+}
+
+transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+{
+ background-image: url("clgs.png");
+width:1250px;
+float:center;
+padding:10px;
+}
+
+#footer
+{
+height: 50px;
+  background-color:grey;
+  font-color:black;
+}
+
+
+#footer
+{background-color:black;
+color:white;
+clear:both;
+      text-align:center;
+padding:5px;
+}
